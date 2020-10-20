@@ -1,0 +1,44 @@
+[Fabrics]
+Side = 1
+Diffuse = d8752355-1db7-4a8c-b4ae-22434599866a
+
+Side = 2
+Diffuse = 8358581f-8bd0-49a9-8644-84ccb9f873c0
+Color = <255, 128, 0>
+Alpha = 0.9
+
+Side = 3
+Color = <0, 128, 128>
+
+[Grid]
+Side = all
+Diffuse = b7c75372-0393-4e84-a6f7-28179db987d8
+
+[Duck]
+
+Side = 1
+Diffuse = ddedc7f5-d3ff-469b-b0b5-bea8ada6533a
+
+Side = 2
+Diffuse = ddedc7f5-d3ff-469b-b0b5-bea8ada6533a
+Repeats = 2, 2
+Offsets = 0.5, 0.5
+Rotation = 90
+
+Side = 3
+Diffuse= ddedc7f5-d3ff-469b-b0b5-bea8ada6533a
+
+Side = 4
+Diffuse = ddedc7f5-d3ff-469b-b0b5-bea8ada6533a
+Repeats = 4, 4
+Offsets = 0.5, 0.5
+Rotation = 180
+
+[Wood]  
+Side = all
+Repeats = 2, 2
+Rotation = 90
+Offsets = 0.5, 0.5
+Diffuse = 8b0f5447-d91d-4879-961d-6b93322ba8a6
+Normal = 11ccdc74-b036-4e0c-a8e6-2368ef1fc4e3
+Specular = c1549675-d0d4-4630-ac67-1807e70ca9be
