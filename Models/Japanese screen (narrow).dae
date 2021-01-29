@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.82.7 commit date:2020-02-12, commit time:16:20, hash:77d23b0bd76f</authoring_tool>
+    </contributor>
+    <created>2020-12-23T15:50:48</created>
+    <modified>2020-12-23T15:50:48</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_cameras>
+    <camera id="Camera-camera" name="Camera">
+      <optics>
+        <technique_common>
+          <perspective>
+            <xfov sid="xfov">39.59775</xfov>
+            <aspect_ratio>1.777778</aspect_ratio>
+            <znear sid="znear">0.1</znear>
+            <zfar sid="zfar">100</zfar>
+          </perspective>
+        </technique_common>
+      </optics>
+      <extra>
+        <technique profile="blender">
+          <shiftx sid="shiftx" type="float">0</shiftx>
+          <shifty sid="shifty" type="float">0</shifty>
+          <dof_distance sid="dof_distance" type="float">10</dof_distance>
+        </technique>
+      </extra>
+    </camera>
+  </library_cameras>
+  <library_lights>
+    <light id="Light-light" name="Light">
+      <technique_common>
+        <point>
+          <color sid="color">1000 1000 1000</color>
+          <constant_attenuation>1</constant_attenuation>
+          <linear_attenuation>0</linear_attenuation>
+          <quadratic_attenuation>0.00111109</quadratic_attenuation>
+        </point>
+      </technique_common>
+      <extra>
+        <technique profile="blender">
+          <type sid="type" type="int">0</type>
+          <flag sid="flag" type="int">0</flag>
+          <mode sid="mode" type="int">1</mode>
+          <gamma sid="blender_gamma" type="float">1</gamma>
+          <red sid="red" type="float">1</red>
+          <green sid="green" type="float">1</green>
+          <blue sid="blue" type="float">1</blue>
+          <shadow_r sid="blender_shadow_r" type="float">0</shadow_r>
+          <shadow_g sid="blender_shadow_g" type="float">0</shadow_g>
+          <shadow_b sid="blender_shadow_b" type="float">0</shadow_b>
+          <energy sid="blender_energy" type="float">1000</energy>
+          <dist sid="blender_dist" type="float">29.99998</dist>
+          <spotsize sid="spotsize" type="float">75</spotsize>
+          <spotblend sid="spotblend" type="float">0.15</spotblend>
+          <att1 sid="att1" type="float">0</att1>
+          <att2 sid="att2" type="float">1</att2>
+          <falloff_type sid="falloff_type" type="int">2</falloff_type>
+          <clipsta sid="clipsta" type="float">0.04999995</clipsta>
+          <clipend sid="clipend" type="float">30.002</clipend>
+          <bias sid="bias" type="float">1</bias>
+          <soft sid="soft" type="float">3</soft>
+          <bufsize sid="bufsize" type="int">2880</bufsize>
+          <samp sid="samp" type="int">3</samp>
+          <buffers sid="buffers" type="int">1</buffers>
+          <area_shape sid="area_shape" type="int">1</area_shape>
+          <area_size sid="area_size" type="float">0.1</area_size>
+          <area_sizey sid="area_sizey" type="float">0.1</area_sizey>
+          <area_sizez sid="area_sizez" type="float">1</area_sizez>
+        </technique>
+      </extra>
+    </light>
+  </library_lights>
+  <library_effects>
+    <effect id="Material-effect">
+      <profile_COMMON>
+        <newparam sid="SFVGSHOJIWALL9132_No_Alpha_tga-surface">
+          <surface type="2D">
+            <init_from>SFVGSHOJIWALL9132_No_Alpha_tga</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="SFVGSHOJIWALL9132_No_Alpha_tga-sampler">
+          <sampler2D>
+            <source>SFVGSHOJIWALL9132_No_Alpha_tga-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="SFVGSHOJIWALL9132_No_Alpha_tga-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images>
+    <image id="SFVGSHOJIWALL9132_No_Alpha_tga" name="SFVGSHOJIWALL9132_No_Alpha_tga">
+      <init_from>SFVGSHOJIWALL9132%20No%20Alpha.tga</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="Material-material" name="Material">
+      <instance_effect url="#Material-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="Japanese_screen-mesh" name="Japanese screen">
+      <mesh>
+        <source id="Japanese_screen-mesh-positions">
+          <float_array id="Japanese_screen-mesh-positions-array" count="96">1 0.03999996 1.5 1 0.03999996 -1.5 1 -0.03999996 1.5 1 -0.03999996 -1.5 -1 0.03999996 1.5 -1 0.03999996 -1.5 -1 -0.03999996 1.5 -1 -0.03999996 -1.5 -0.75 -0.3 -1.55 -0.75 0.3 -1.55 -0.65 -0.3 -1.55 -0.65 0.3 -1.55 -0.75 -0.3 -1.49 -0.75 -0.18 -1.45 -0.65 -0.18 -1.45 -0.65 -0.3 -1.49 -0.75 0.18 -1.45 -0.75 0.3 -1.49 -0.65 0.3 -1.49 -0.65 0.18 -1.45 0.7500001 -0.3 -1.55 0.7500001 0.3 -1.55 0.85 -0.3 -1.55 0.85 0.3 -1.55 0.7500001 -0.3 -1.49 0.7500001 -0.18 -1.45 0.85 -0.18 -1.45 0.85 -0.3 -1.49 0.7500001 0.18 -1.45 0.7500001 0.3 -1.49 0.85 0.3 -1.49 0.85 0.18 -1.45</float_array>
+          <technique_common>
+            <accessor source="#Japanese_screen-mesh-positions-array" count="32" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Japanese_screen-mesh-normals">
+          <float_array id="Japanese_screen-mesh-normals-array" count="51">0 0 1 0 -1 0 -1 0 0 0 0 -1 1 0 0 0 1 0 1 1.0348e-6 0 0 -0.3162284 0.9486832 0 0.3162284 0.9486832 -1 -1.0348e-6 0 0 -0.3162286 0.948683 1 -5.17401e-7 0 0 -0.3162283 0.9486832 0 0.3162283 0.9486832 -1 5.17401e-7 0 1 -1.0348e-6 0 0 0.3162286 0.9486831</float_array>
+          <technique_common>
+            <accessor source="#Japanese_screen-mesh-normals-array" count="17" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Japanese_screen-mesh-map">
+          <float_array id="Japanese_screen-mesh-map-array" count="312">0 1 1 0.9790039 1 1 1 1 0 -0.001845598 1 -0.001845598 1 1 0 0.9793917 0 1 1 0.03125 0 0 0 0.03125 1 0.9732397 0 1 0 0.9732398 1 1 0 0 1 0 0.2358378 0.9942065 0.2072441 0.982769 0.2072441 0.9656128 0.6715309 0.9952126 0.5857496 0.9666189 0.6715309 0.9666189 0.2990557 0.9694275 0.3228839 0.9865838 0.2990557 0.9865838 0.1224754 0.9651178 0.265444 0.9937115 0.1224754 0.9937115 0.4936204 0.9960908 0.4650267 0.9674971 0.4936204 0.9674971 0.1857699 0.967594 0.209598 0.9847502 0.1857699 0.9847502 0.07433831 0.9669112 0.102932 0.9955049 0.07433825 0.9955049 0.4169906 0.9951915 0.3883969 0.9837541 0.3883969 0.9665979 0.3228236 0.9928269 0.2942299 0.9813895 0.2942299 0.9642333 0.6093681 0.9960615 0.523587 0.9674679 0.6093681 0.9674679 0.2990557 0.9694275 0.3228839 0.9865838 0.2990557 0.9865838 0.1765318 0.9655798 0.3195004 0.9941735 0.1765318 0.9941735 0.4633916 0.9960908 0.4347978 0.9674971 0.4633916 0.9674971 0.1857699 0.967594 0.209598 0.9847502 0.1857699 0.9847502 0.1099928 0.9669112 0.1385865 0.9955049 0.1099928 0.9955049 0.3454829 0.9962916 0.3168892 0.9848542 0.3168892 0.967698 0 1 0 0.9790039 1 0.9790039 1 1 0 1 0 -0.001845598 1 1 1 0.9793916 0 0.9793917 1 0.03125 1 0 0 0 1 0.9732397 1 1 0 1 1 1 0 1 0 0 0.2072441 0.9656128 0.3502127 0.9656128 0.2358378 0.9942065 0.3502127 0.9656128 0.3502127 0.982769 0.321619 0.9942065 0.2358378 0.9942065 0.3502127 0.9656128 0.321619 0.9942065 0.6715309 0.9952126 0.5857496 0.9952126 0.5857496 0.9666189 0.2990557 0.9694275 0.3228839 0.9694275 0.3228839 0.9865838 0.1224754 0.9651178 0.265444 0.9651178 0.265444 0.9937115 0.4936204 0.9960908 0.4650267 0.9960908 0.4650267 0.9674971 0.1857699 0.967594 0.209598 0.967594 0.209598 0.9847502 0.07433831 0.9669112 0.102932 0.9669112 0.102932 0.9955049 0.3883969 0.9665979 0.5313654 0.9665978 0.4169906 0.9951915 0.5313654 0.9665978 0.5313654 0.983754 0.5027717 0.9951915 0.4169906 0.9951915 0.5313654 0.9665978 0.5027717 0.9951915 0.2942299 0.9642333 0.4371985 0.9642332 0.3228236 0.9928269 0.4371985 0.9642332 0.4371985 0.9813895 0.4086048 0.9928269 0.3228236 0.9928269 0.4371985 0.9642332 0.4086048 0.9928269 0.6093681 0.9960615 0.523587 0.9960615 0.523587 0.9674679 0.2990557 0.9694275 0.3228839 0.9694275 0.3228839 0.9865838 0.1765318 0.9655798 0.3195004 0.9655798 0.3195004 0.9941735 0.4633916 0.9960908 0.4347978 0.9960908 0.4347978 0.9674971 0.1857699 0.967594 0.209598 0.967594 0.209598 0.9847502 0.1099928 0.9669112 0.1385865 0.9669112 0.1385865 0.9955049 0.3168892 0.967698 0.4598578 0.9676979 0.3454829 0.9962916 0.4598578 0.9676979 0.4598578 0.9848542 0.4312641 0.9962916 0.3454829 0.9962916 0.4598578 0.9676979 0.4312641 0.9962916</float_array>
+          <technique_common>
+            <accessor source="#Japanese_screen-mesh-map-array" count="156" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Japanese_screen-mesh-vertices">
+          <input semantic="POSITION" source="#Japanese_screen-mesh-positions"/>
+        </vertices>
+        <triangles material="Material-material" count="52">
+          <input semantic="VERTEX" source="#Japanese_screen-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Japanese_screen-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Japanese_screen-mesh-map" offset="2" set="0"/>
+          <p>4 0 0 2 0 1 0 0 2 2 1 3 7 1 4 3 1 5 6 2 6 5 2 7 7 2 8 1 3 9 7 3 10 5 3 11 0 4 12 3 4 13 1 4 14 4 5 15 1 5 16 5 5 17 14 6 18 15 6 19 10 6 20 16 0 21 14 0 22 19 0 23 17 5 24 11 5 25 9 5 26 11 3 27 8 3 28 9 3 29 13 7 30 15 7 31 14 7 32 15 1 33 8 1 34 10 1 35 19 8 36 17 8 37 16 8 38 16 9 39 17 9 40 9 9 41 26 6 42 27 6 43 22 6 44 28 0 45 26 0 46 31 0 47 29 5 48 23 5 49 21 5 50 23 3 51 20 3 52 21 3 53 25 10 54 27 10 55 26 10 56 27 1 57 20 1 58 22 1 59 31 8 60 29 8 61 28 8 62 28 9 63 29 9 64 21 9 65 4 0 66 6 0 67 2 0 68 2 1 69 6 1 70 7 1 71 6 2 72 4 2 73 5 2 74 1 3 75 3 3 76 7 3 77 0 4 78 2 4 79 3 4 80 4 5 81 0 5 82 1 5 83 10 4 84 11 4 85 14 4 86 11 11 87 18 11 88 19 11 89 14 4 90 11 4 91 19 4 92 16 0 93 13 0 94 14 0 95 17 5 96 18 5 97 11 5 98 11 3 99 10 3 100 8 3 101 13 12 102 12 12 103 15 12 104 15 1 105 12 1 106 8 1 107 19 13 108 18 13 109 17 13 110 9 2 111 8 2 112 16 2 113 8 14 114 12 14 115 13 14 116 16 2 117 8 2 118 13 2 119 22 4 120 23 4 121 26 4 122 23 15 123 30 15 124 31 15 125 26 4 126 23 4 127 31 4 128 28 0 129 25 0 130 26 0 131 29 5 132 30 5 133 23 5 134 23 3 135 22 3 136 20 3 137 25 12 138 24 12 139 27 12 140 27 1 141 24 1 142 20 1 143 31 16 144 30 16 145 29 16 146 21 2 147 20 2 148 28 2 149 20 14 150 24 14 151 25 14 152 28 2 153 20 2 154 25 2 155</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="Camera" name="Camera" type="NODE">
+        <matrix sid="transform">0.6859207 -0.3240135 0.6515582 7.358891 0.7276763 0.3054208 -0.6141704 -6.925791 0 0.8953956 0.4452714 4.958309 0 0 0 1</matrix>
+        <instance_camera url="#Camera-camera"/>
+      </node>
+      <node id="Light" name="Light" type="NODE">
+        <matrix sid="transform">-0.2908646 -0.7711008 0.5663932 4.076245 0.9551712 -0.1998834 0.2183912 1.005454 -0.05518906 0.6045247 0.7946723 5.903862 0 0 0 1</matrix>
+        <instance_light url="#Light-light"/>
+      </node>
+      <node id="Japanese_screen" name="Japanese screen" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 1.5 0 0 0 1</matrix>
+        <instance_geometry url="#Japanese_screen-mesh" name="Japanese screen">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Material-material" target="#Material-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

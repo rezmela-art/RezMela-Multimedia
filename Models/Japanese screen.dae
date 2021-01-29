@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.82.7 commit date:2020-02-12, commit time:16:20, hash:77d23b0bd76f</authoring_tool>
+    </contributor>
+    <created>2020-12-23T13:50:01</created>
+    <modified>2020-12-23T13:50:01</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="Material-effect">
+      <profile_COMMON>
+        <newparam sid="SFVGSHOJIWALL9132_No_Alpha_tga-surface">
+          <surface type="2D">
+            <init_from>SFVGSHOJIWALL9132_No_Alpha_tga</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="SFVGSHOJIWALL9132_No_Alpha_tga-sampler">
+          <sampler2D>
+            <source>SFVGSHOJIWALL9132_No_Alpha_tga-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="SFVGSHOJIWALL9132_No_Alpha_tga-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images>
+    <image id="SFVGSHOJIWALL9132_No_Alpha_tga" name="SFVGSHOJIWALL9132_No_Alpha_tga">
+      <init_from>SFVGSHOJIWALL9132%20No%20Alpha.tga</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="Material-material" name="Material">
+      <instance_effect url="#Material-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="Japanese_screen-mesh" name="Japanese screen">
+      <mesh>
+        <source id="Japanese_screen-mesh-positions">
+          <float_array id="Japanese_screen-mesh-positions-array" count="96">2 0.03999996 1.5 2 0.03999996 -1.5 2 -0.03999996 1.5 2 -0.03999996 -1.5 -2 0.03999996 1.5 -2 0.03999996 -1.5 -2 -0.03999996 1.5 -2 -0.03999996 -1.5 -1.55 -0.3 -1.55 -1.55 0.3 -1.55 -1.45 -0.3 -1.55 -1.45 0.3 -1.55 -1.55 -0.3 -1.49 -1.55 -0.18 -1.45 -1.45 -0.18 -1.45 -1.45 -0.3 -1.49 -1.55 0.18 -1.45 -1.55 0.3 -1.49 -1.45 0.3 -1.49 -1.45 0.18 -1.45 1.45 -0.3 -1.55 1.45 0.3 -1.55 1.55 -0.3 -1.55 1.55 0.3 -1.55 1.45 -0.3 -1.49 1.45 -0.18 -1.45 1.55 -0.18 -1.45 1.55 -0.3 -1.49 1.45 0.18 -1.45 1.45 0.3 -1.49 1.55 0.3 -1.49 1.55 0.18 -1.45</float_array>
+          <technique_common>
+            <accessor source="#Japanese_screen-mesh-positions-array" count="32" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Japanese_screen-mesh-normals">
+          <float_array id="Japanese_screen-mesh-normals-array" count="36">0 0 1 0 -1 0 -1 0 0 0 0 -1 1 0 0 0 1 0 0 -0.3162282 0.9486833 0 0.3162282 0.9486833 1 1.0348e-6 0 0 -0.316228 0.9486833 0 0.316228 0.9486833 -1 -1.0348e-6 0</float_array>
+          <technique_common>
+            <accessor source="#Japanese_screen-mesh-normals-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Japanese_screen-mesh-map-0">
+          <float_array id="Japanese_screen-mesh-map-0-array" count="312">0 1 1 0.9790039 1 1 1 1 0 -0.001845598 1 -0.001845598 1 1 0 0.9793917 0 1 1 0.03125 0 0 0 0.03125 1 0.9732397 0 1 0 0.9732398 1 1 0 0 1 0 0.2358378 0.9942065 0.2072441 0.982769 0.2072441 0.9656128 0.6715309 0.9952126 0.5857496 0.9666189 0.6715309 0.9666189 0.2990557 0.9694275 0.3228839 0.9865838 0.2990557 0.9865838 0.1224754 0.9651178 0.265444 0.9937115 0.1224754 0.9937115 0.4936204 0.9960908 0.4650267 0.9674971 0.4936204 0.9674971 0.1857699 0.967594 0.209598 0.9847502 0.1857699 0.9847502 0.07433831 0.9669112 0.102932 0.9955049 0.07433825 0.9955049 0.4169906 0.9951915 0.3883969 0.9837541 0.3883969 0.9665979 0.3228236 0.9928269 0.2942299 0.9813895 0.2942299 0.9642333 0.6093681 0.9960615 0.523587 0.9674679 0.6093681 0.9674679 0.2990557 0.9694275 0.3228839 0.9865838 0.2990557 0.9865838 0.1765318 0.9655798 0.3195004 0.9941735 0.1765318 0.9941735 0.4633916 0.9960908 0.4347978 0.9674971 0.4633916 0.9674971 0.1857699 0.967594 0.209598 0.9847502 0.1857699 0.9847502 0.1099928 0.9669112 0.1385865 0.9955049 0.1099928 0.9955049 0.3454829 0.9962916 0.3168892 0.9848542 0.3168892 0.967698 0 1 0 0.9790039 1 0.9790039 1 1 0 1 0 -0.001845598 1 1 1 0.9793916 0 0.9793917 1 0.03125 1 0 0 0 1 0.9732397 1 1 0 1 1 1 0 1 0 0 0.2072441 0.9656128 0.3502127 0.9656128 0.2358378 0.9942065 0.3502127 0.9656128 0.3502127 0.982769 0.321619 0.9942065 0.2358378 0.9942065 0.3502127 0.9656128 0.321619 0.9942065 0.6715309 0.9952126 0.5857496 0.9952126 0.5857496 0.9666189 0.2990557 0.9694275 0.3228839 0.9694275 0.3228839 0.9865838 0.1224754 0.9651178 0.265444 0.9651178 0.265444 0.9937115 0.4936204 0.9960908 0.4650267 0.9960908 0.4650267 0.9674971 0.1857699 0.967594 0.209598 0.967594 0.209598 0.9847502 0.07433831 0.9669112 0.102932 0.9669112 0.102932 0.9955049 0.3883969 0.9665979 0.5313654 0.9665978 0.4169906 0.9951915 0.5313654 0.9665978 0.5313654 0.983754 0.5027717 0.9951915 0.4169906 0.9951915 0.5313654 0.9665978 0.5027717 0.9951915 0.2942299 0.9642333 0.4371985 0.9642332 0.3228236 0.9928269 0.4371985 0.9642332 0.4371985 0.9813895 0.4086048 0.9928269 0.3228236 0.9928269 0.4371985 0.9642332 0.4086048 0.9928269 0.6093681 0.9960615 0.523587 0.9960615 0.523587 0.9674679 0.2990557 0.9694275 0.3228839 0.9694275 0.3228839 0.9865838 0.1765318 0.9655798 0.3195004 0.9655798 0.3195004 0.9941735 0.4633916 0.9960908 0.4347978 0.9960908 0.4347978 0.9674971 0.1857699 0.967594 0.209598 0.967594 0.209598 0.9847502 0.1099928 0.9669112 0.1385865 0.9669112 0.1385865 0.9955049 0.3168892 0.967698 0.4598578 0.9676979 0.3454829 0.9962916 0.4598578 0.9676979 0.4598578 0.9848542 0.4312641 0.9962916 0.3454829 0.9962916 0.4598578 0.9676979 0.4312641 0.9962916</float_array>
+          <technique_common>
+            <accessor source="#Japanese_screen-mesh-map-0-array" count="156" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Japanese_screen-mesh-vertices">
+          <input semantic="POSITION" source="#Japanese_screen-mesh-positions"/>
+        </vertices>
+        <triangles material="Material-material" count="52">
+          <input semantic="VERTEX" source="#Japanese_screen-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Japanese_screen-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Japanese_screen-mesh-map-0" offset="2" set="0"/>
+          <p>4 0 0 2 0 1 0 0 2 2 1 3 7 1 4 3 1 5 6 2 6 5 2 7 7 2 8 1 3 9 7 3 10 5 3 11 0 4 12 3 4 13 1 4 14 4 5 15 1 5 16 5 5 17 14 4 18 15 4 19 10 4 20 16 0 21 14 0 22 19 0 23 17 5 24 11 5 25 9 5 26 11 3 27 8 3 28 9 3 29 13 6 30 15 6 31 14 6 32 15 1 33 8 1 34 10 1 35 19 7 36 17 7 37 16 7 38 16 2 39 17 2 40 9 2 41 26 4 42 27 4 43 22 4 44 28 0 45 26 0 46 31 0 47 29 5 48 23 5 49 21 5 50 23 3 51 20 3 52 21 3 53 25 6 54 27 6 55 26 6 56 27 1 57 20 1 58 22 1 59 31 7 60 29 7 61 28 7 62 28 2 63 29 2 64 21 2 65 4 0 66 6 0 67 2 0 68 2 1 69 6 1 70 7 1 71 6 2 72 4 2 73 5 2 74 1 3 75 3 3 76 7 3 77 0 4 78 2 4 79 3 4 80 4 5 81 0 5 82 1 5 83 10 4 84 11 4 85 14 4 86 11 8 87 18 8 88 19 8 89 14 4 90 11 4 91 19 4 92 16 0 93 13 0 94 14 0 95 17 5 96 18 5 97 11 5 98 11 3 99 10 3 100 8 3 101 13 9 102 12 9 103 15 9 104 15 1 105 12 1 106 8 1 107 19 10 108 18 10 109 17 10 110 9 2 111 8 2 112 16 2 113 8 11 114 12 11 115 13 11 116 16 2 117 8 2 118 13 2 119 22 4 120 23 4 121 26 4 122 23 8 123 30 8 124 31 8 125 26 4 126 23 4 127 31 4 128 28 0 129 25 0 130 26 0 131 29 5 132 30 5 133 23 5 134 23 3 135 22 3 136 20 3 137 25 9 138 24 9 139 27 9 140 27 1 141 24 1 142 20 1 143 31 10 144 30 10 145 29 10 146 21 2 147 20 2 148 28 2 149 20 11 150 24 11 151 25 11 152 28 2 153 20 2 154 25 2 155</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="Japanese_screen" name="Japanese screen" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 1.5 0 0 0 1</matrix>
+        <instance_geometry url="#Japanese_screen-mesh" name="Japanese screen">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Material-material" target="#Material-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>
