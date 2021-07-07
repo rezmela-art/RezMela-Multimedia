@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.82.7 commit date:2020-02-12, commit time:16:20, hash:77d23b0bd76f</authoring_tool>
+    </contributor>
+    <created>2021-03-17T15:48:48</created>
+    <modified>2021-03-17T15:48:48</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="Main_texture-effect">
+      <profile_COMMON>
+        <newparam sid="Metal_jpg-surface">
+          <surface type="2D">
+            <init_from>Metal_jpg</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Metal_jpg-sampler">
+          <sampler2D>
+            <source>Metal_jpg-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="Metal_jpg-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Description-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <color sid="diffuse">0.8 0.8 0.8 1</color>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Image-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <color sid="diffuse">0.8 0.8 0.8 1</color>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="L_button-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <color sid="diffuse">0.8 0.8 0.8 1</color>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="R_button-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <color sid="diffuse">0.8 0.8 0.8 1</color>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Apply_button-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <color sid="diffuse">0.8 0.8 0.8 1</color>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Preloader-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <color sid="diffuse">0.8 0.8 0.8 1</color>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Button_sides-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <color sid="diffuse">0.8 0.8 0.8 1</color>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images>
+    <image id="Metal_jpg" name="Metal_jpg">
+      <init_from>Metal.jpg</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="Main_texture-material" name="Main texture">
+      <instance_effect url="#Main_texture-effect"/>
+    </material>
+    <material id="Description-material" name="Description">
+      <instance_effect url="#Description-effect"/>
+    </material>
+    <material id="Image-material" name="Image">
+      <instance_effect url="#Image-effect"/>
+    </material>
+    <material id="L_button-material" name="L button">
+      <instance_effect url="#L_button-effect"/>
+    </material>
+    <material id="R_button-material" name="R button">
+      <instance_effect url="#R_button-effect"/>
+    </material>
+    <material id="Apply_button-material" name="Apply button">
+      <instance_effect url="#Apply_button-effect"/>
+    </material>
+    <material id="Preloader-material" name="Preloader">
+      <instance_effect url="#Preloader-effect"/>
+    </material>
+    <material id="Button_sides-material" name="Button sides">
+      <instance_effect url="#Button_sides-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="Texture_changer-mesh" name="Texture changer">
+      <mesh>
+        <source id="Texture_changer-mesh-positions">
+          <float_array id="Texture_changer-mesh-positions-array" count="204">-1 -1 -1 -1 -1 1 -1 1 -1 -1 1 1 1 -1 -1 1 -1 1 1 1 -1 1 1 1 -0.1 -0.1 1 -0.1 -0.1 31 -0.1 0.1 1 -0.1 0.1 31 0.1 -0.1 1 0.1 -0.1 31 0.1 0.1 1 0.1 0.1 31 -2 -0.6363961 23.22183 -2 -0.7778174 24.63604 -2 0.7778174 37.36396 -2 0.6363961 38.77817 2 -0.6363961 23.22183 2 -0.7778174 24.63604 2 0.7778174 37.36396 2 0.6363961 38.77817 -0.75 -0.72832 25.13101 -0.75 -0.7636753 25.48457 -0.75 0.3323401 35.73762 -0.75 0.2969848 36.09117 0.75 -0.72832 25.13101 0.75 -0.7636753 25.48457 0.75 0.3323401 35.73762 0.75 0.2969848 36.09117 -1.2 0 32.41421 -1.2 -0.03535532 32.76777 -1.2 0.2828427 35.24264 -1.2 0.2474873 35.59619 -0.8 0 32.41421 -0.8 -0.03535532 32.76777 -0.8 0.2828427 35.24264 -0.8 0.2474873 35.59619 -1 0.4101219 36.51543 -1 0.3747666 36.86899 -1 0.5798276 38.21249 -1 0.5444722 38.56604 1 0.4101219 36.51543 1 0.3747666 36.86899 1 0.5798276 38.21249 1 0.5444722 38.56604 0.8 0 32.41421 0.8 -0.03535532 32.76777 0.8 0.2828427 35.24264 0.8 0.2474873 35.59619 1.2 0 32.41421 1.2 -0.03535532 32.76777 1.2 0.2828427 35.24264 1.2 0.2474873 35.59619 0.9 -0.5656854 26.75736 0.9 -0.6010407 27.11091 0.9 -0.2828427 29.58579 0.9 -0.318198 29.93934 1.9 -0.5656854 26.75736 1.9 -0.6010407 27.11091 1.9 -0.2828427 29.58579 1.9 -0.318198 29.93934 -1.935793 -0.7237161 25.20387 -1.735793 -0.7237161 25.20387 -1.935793 -0.5822948 26.61809 -1.735793 -0.5822948 26.61809</float_array>
+          <technique_common>
+            <accessor source="#Texture_changer-mesh-positions-array" count="68" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Texture_changer-mesh-normals">
+          <float_array id="Texture_changer-mesh-normals-array" count="105">-1 0 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0 0 1 0 0.9950372 0.09950357 0 -0.9950372 -0.09950357 0 0.9950373 -0.09950369 0 -0.9950373 0.09950369 0 0.9950372 0.09950464 0 -0.9950373 -0.09950381 0 -0.9950373 0.09950375 -1 -2.38422e-6 0 0 0.9950372 0.09950357 1 -2.98028e-7 0 0 -0.9950373 -0.09950363 0 -0.9950372 0.09950375 0 0.9950372 0.09950387 0 0.9950373 0.09950363 1 -1.19211e-6 0 0 -0.9950372 0.09950369 1 1.78813e-6 0 0 -0.9950372 0.09950369 0 -0.9950372 0.09950357 -1 1.19209e-6 0 0 0.9950373 0.09950351 0 -0.9950372 0.09950369 -1 2.98021e-7 0 0 0.9950373 0.09950351 1 2.38418e-6 0 0 -0.9950372 0.09950375 -1 -5.96049e-7 0 0 -0.9950372 0.09950363 0 -0.9950373 0.09950351</float_array>
+          <technique_common>
+            <accessor source="#Texture_changer-mesh-normals-array" count="35" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Texture_changer-mesh-map-0">
+          <float_array id="Texture_changer-mesh-map-0-array" count="504">0.7793516 0.5549402 0.2206484 0.5 0.7793516 0.5000001 0.3007856 0.6958978 0.6992144 0.6958978 0.3007856 0.6958978 0.6992144 0.5391796 0.3007856 0.5 0.6992144 0.5 0.6992144 0.5391796 0.3007856 0.5000001 0.6992144 0.5000001 0.6992144 0.6958978 0.3007856 0.3041022 0.6992144 0.3041021 0.3007856 0.6958978 0.6992144 0.3041022 0.6992144 0.6958978 0.5205098 1.145387 0.4794902 0.5403367 0.5205098 0.5403367 0.5205098 1.145387 0.4794902 0.5403367 0.5205098 0.5403367 0.9999995 0.9833518 0.7500022 0 1 0 0.5199214 1.126873 0.4800786 0.5391796 0.5199214 0.5391796 0.5926224 0.7897313 0.4147556 0.9357799 0.5761563 0.7738599 0.8922438 0.1735036 0.8590414 0.8264964 0.8590414 0.1735036 0.5896715 0.9349199 0.4103285 0.7906275 0.4266324 0.774595 0.8922436 0.1735036 0.8590411 0.8264964 0.8590411 0.1735036 0.7305722 0.1301134 0.2694278 0.3568471 0.2694278 0.1301134 0.832024 -0.03263676 0.167976 0.2938597 0.167976 -0.03263676 0.480614 0.5065656 0.5081672 0.7643213 0.4815028 0.4976775 0.4772348 0.7732093 0.514944 0.7643213 0.4772348 0.7643213 0.5383142 0.9164825 0.4119588 0.800247 0.4160348 0.7962388 0.514944 0.5065656 0.4772348 0.4976775 0.514944 0.4976775 1 0 0 1 0 0 0.4989235 0.689661 0.5069229 0.7518779 0.4998124 0.6807729 0.4659221 0.760766 0.4759779 0.7518779 0.4659221 0.7518779 0.5069229 0.7518779 0.4989235 0.689661 0.4998124 0.6807729 0.4759779 0.689661 0.4659221 0.6807729 0.4759779 0.6807729 1 0 0 1 0 0 0.5092338 0.7927632 0.5143889 0.8265381 0.5101226 0.7838751 0.4558663 0.8354262 0.5363125 0.8265381 0.4558663 0.8265381 0.566846 0.9445393 0.5432054 0.9293085 0.5472813 0.9253004 0.5363125 0.7927632 0.4558663 0.7838751 0.5363125 0.7838751 1 1 0 0 1 0 0.4989235 0.689661 0.5069229 0.7518779 0.4998124 0.6807729 0.516201 0.760766 0.5262567 0.7518779 0.516201 0.7518779 0.5326078 0.9108712 0.495924 0.8828143 0.5 0.8788061 0.5262567 0.689661 0.516201 0.6807729 0.5262567 0.6807729 1 0 0 1 0 0 0.4847025 0.547451 0.4927018 0.6096678 0.4855914 0.5385628 0.5187149 0.618556 0.5438543 0.6096678 0.5187149 0.6096678 0.4673922 0.8467413 0.4307084 0.8186843 0.4347844 0.8146762 0.5438543 0.547451 0.5187149 0.5385628 0.5438543 0.5385628 1 0 0 1 0 0 1 0 0 1 0 0 0.7793516 0.5549402 0.2206484 0.5549402 0.2206484 0.5 0.3007856 0.6958978 0.6992144 0.6958978 0.6992144 0.6958978 0.6992144 0.5391796 0.3007856 0.5391796 0.3007856 0.5 0.6992144 0.5391796 0.3007856 0.5391796 0.3007856 0.5000001 0.6992144 0.6958978 0.3007856 0.6958978 0.3007856 0.3041022 0.3007856 0.6958978 0.3007856 0.3041022 0.6992144 0.3041022 0.5205098 1.145387 0.4794902 1.145387 0.4794902 0.5403367 0.5205098 1.145387 0.4794902 1.145387 0.4794902 0.5403367 0.9999995 0.9833518 0.7500017 0.9833518 0.7500022 0 0.5199214 1.126873 0.4800786 1.126873 0.4800786 0.5391796 0.5926224 0.7897313 0.4312217 0.9516513 0.4147556 0.9357799 0.8922438 0.1735036 0.8922439 0.8264964 0.8590414 0.8264964 0.5896715 0.9349199 0.5733677 0.9509523 0.4103285 0.7906275 0.8922436 0.1735036 0.8922435 0.8264964 0.8590411 0.8264964 0.7305722 0.1301134 0.7305722 0.3568471 0.2694278 0.3568471 0.832024 -0.03263676 0.832024 0.2938597 0.167976 0.2938597 0.480614 0.5065656 0.5072784 0.7732093 0.5081672 0.7643213 0.4772348 0.7732093 0.514944 0.7732093 0.514944 0.7643213 0.5383142 0.9164825 0.5342382 0.9204906 0.4119588 0.800247 0.514944 0.5065656 0.4772348 0.5065656 0.4772348 0.4976775 1 0 1 1 0 1 0.4989235 0.689661 0.5060341 0.760766 0.5069229 0.7518779 0.4659221 0.760766 0.4759779 0.760766 0.4759779 0.7518779 0.5069229 0.7518779 0.5060341 0.760766 0.4989235 0.689661 0.4759779 0.689661 0.4659221 0.689661 0.4659221 0.6807729 1 0 1 1 0 1 0.5092338 0.7927632 0.5135001 0.8354262 0.5143889 0.8265381 0.4558663 0.8354262 0.5363125 0.8354262 0.5363125 0.8265381 0.566846 0.9445393 0.5627701 0.9485475 0.5432054 0.9293085 0.5363125 0.7927632 0.4558663 0.7927632 0.4558663 0.7838751 1 1 0 1 0 0 0.4989235 0.689661 0.5060341 0.760766 0.5069229 0.7518779 0.516201 0.760766 0.5262567 0.760766 0.5262567 0.7518779 0.5326078 0.9108712 0.5285319 0.9148793 0.495924 0.8828143 0.5262567 0.689661 0.516201 0.689661 0.516201 0.6807729 1 0 1 1 0 1 0.4847025 0.547451 0.4918131 0.618556 0.4927018 0.6096678 0.5187149 0.618556 0.5438543 0.618556 0.5438543 0.6096678 0.4673922 0.8467413 0.4633162 0.8507494 0.4307084 0.8186843 0.5438543 0.547451 0.5187149 0.547451 0.5187149 0.5385628 1 0 1 1 0 1 1 0 1 1 0 1</float_array>
+          <technique_common>
+            <accessor source="#Texture_changer-mesh-map-0-array" count="252" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Texture_changer-mesh-vertices">
+          <input semantic="POSITION" source="#Texture_changer-mesh-positions"/>
+        </vertices>
+        <triangles material="Main_texture-material" count="40">
+          <input semantic="VERTEX" source="#Texture_changer-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Texture_changer-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Texture_changer-mesh-map-0" offset="2" set="0"/>
+          <p>1 0 0 2 0 1 0 0 2 3 1 3 6 1 4 2 1 5 7 2 6 4 2 7 6 2 8 5 3 9 0 3 10 4 3 11 6 4 12 0 4 13 2 4 14 3 5 15 5 5 16 7 5 17 9 0 18 10 0 19 8 0 20 11 1 21 14 1 22 10 1 23 15 2 24 12 2 25 14 2 26 13 3 27 8 3 28 12 3 29 17 0 30 18 0 31 16 0 32 19 6 33 22 6 34 18 6 35 22 2 36 21 2 37 20 2 38 21 7 39 16 7 40 20 7 41 22 8 42 16 8 43 18 8 44 19 9 45 21 9 46 23 9 47 25 0 48 26 0 49 24 0 50 27 10 51 30 10 52 26 10 53 30 2 54 29 2 55 28 2 56 29 11 57 24 11 58 28 11 59 1 0 126 3 0 127 2 0 128 3 1 129 7 1 130 6 1 131 7 2 132 5 2 133 4 2 134 5 3 135 1 3 136 0 3 137 6 4 138 4 4 139 0 4 140 3 5 141 1 5 142 5 5 143 9 0 144 11 0 145 10 0 146 11 1 147 15 1 148 14 1 149 15 2 150 13 2 151 12 2 152 13 3 153 9 3 154 8 3 155 17 0 156 19 0 157 18 0 158 19 6 159 23 6 160 22 6 161 22 2 162 23 2 163 21 2 164 21 7 165 17 7 166 16 7 167 22 8 168 20 8 169 16 8 170 19 9 171 17 9 172 21 9 173 25 0 174 27 0 175 26 0 176 27 10 177 31 10 178 30 10 179 30 2 180 31 2 181 29 2 182 29 11 183 25 11 184 24 11 185</p>
+        </triangles>
+        <triangles material="Description-material" count="2">
+          <input semantic="VERTEX" source="#Texture_changer-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Texture_changer-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Texture_changer-mesh-map-0" offset="2" set="0"/>
+          <p>43 12 90 45 12 91 47 12 92 43 12 216 41 12 217 45 12 218</p>
+        </triangles>
+        <triangles material="Image-material" count="2">
+          <input semantic="VERTEX" source="#Texture_changer-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Texture_changer-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Texture_changer-mesh-map-0" offset="2" set="0"/>
+          <p>27 12 60 29 12 61 31 12 62 27 12 186 25 12 187 29 12 188</p>
+        </triangles>
+        <triangles material="L_button-material" count="2">
+          <input semantic="VERTEX" source="#Texture_changer-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Texture_changer-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Texture_changer-mesh-map-0" offset="2" set="0"/>
+          <p>35 17 75 37 17 76 39 17 77 35 27 201 33 27 202 37 27 203</p>
+        </triangles>
+        <triangles material="R_button-material" count="2">
+          <input semantic="VERTEX" source="#Texture_changer-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Texture_changer-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Texture_changer-mesh-map-0" offset="2" set="0"/>
+          <p>51 21 105 53 21 106 55 21 107 51 31 231 49 31 232 53 31 233</p>
+        </triangles>
+        <triangles material="Apply_button-material" count="2">
+          <input semantic="VERTEX" source="#Texture_changer-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Texture_changer-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Texture_changer-mesh-map-0" offset="2" set="0"/>
+          <p>59 23 120 61 23 121 63 23 122 59 33 246 57 33 247 61 33 248</p>
+        </triangles>
+        <triangles material="Preloader-material" count="2">
+          <input semantic="VERTEX" source="#Texture_changer-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Texture_changer-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Texture_changer-mesh-map-0" offset="2" set="0"/>
+          <p>65 24 123 66 24 124 64 24 125 65 34 249 67 34 250 66 34 251</p>
+        </triangles>
+        <triangles material="Button_sides-material" count="32">
+          <input semantic="VERTEX" source="#Texture_changer-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Texture_changer-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Texture_changer-mesh-map-0" offset="2" set="0"/>
+          <p>33 13 63 34 13 64 32 13 65 35 14 66 38 14 67 34 14 68 38 15 69 37 15 70 36 15 71 37 16 72 32 16 73 36 16 74 41 0 78 42 0 79 40 0 80 43 18 81 46 18 82 42 18 83 46 2 84 45 2 85 44 2 86 45 7 87 40 7 88 44 7 89 49 0 93 50 0 94 48 0 95 51 19 96 54 19 97 50 19 98 54 20 99 53 20 100 52 20 101 53 7 102 48 7 103 52 7 104 57 0 108 58 0 109 56 0 110 59 6 111 62 6 112 58 6 113 62 22 114 61 22 115 60 22 116 61 7 117 56 7 118 60 7 119 33 25 189 35 25 190 34 25 191 35 26 192 39 26 193 38 26 194 38 2 195 39 2 196 37 2 197 37 7 198 33 7 199 32 7 200 41 0 204 43 0 205 42 0 206 43 6 207 47 6 208 46 6 209 46 2 210 47 2 211 45 2 212 45 7 213 41 7 214 40 7 215 49 28 219 51 28 220 50 28 221 51 29 222 55 29 223 54 29 224 54 30 225 55 30 226 53 30 227 53 16 228 49 16 229 48 16 230 57 32 234 59 32 235 58 32 236 59 6 237 63 6 238 62 6 239 62 2 240 63 2 241 61 2 242 61 7 243 57 7 244 56 7 245</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="Cube" name="Cube" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 0.1 0.1 0 0 0 1</matrix>
+        <instance_geometry url="#Texture_changer-mesh" name="Cube">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Main_texture-material" target="#Main_texture-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+              <instance_material symbol="Description-material" target="#Description-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+              <instance_material symbol="Image-material" target="#Image-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+              <instance_material symbol="L_button-material" target="#L_button-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+              <instance_material symbol="R_button-material" target="#R_button-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+              <instance_material symbol="Apply_button-material" target="#Apply_button-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+              <instance_material symbol="Preloader-material" target="#Preloader-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+              <instance_material symbol="Button_sides-material" target="#Button_sides-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>
